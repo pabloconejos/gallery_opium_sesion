@@ -1,0 +1,38 @@
+---
+const { class: mainTitle, next, prev, text } = Astro.props
+
+---
+
+
+<nav class="p-4 w-full flex justify-between ">
+    <div class="flex items-center">
+        <a href={prev}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
+                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l14 0" />
+                <path d="M5 12l4 4" />
+                <path d="M5 12l4 -4" />
+            </svg>
+        </a>
+
+    </div>
+    <!--<img class="w-[400px] h-auto" src="../../public/images/Captura de pantalla 2024-02-05 211755 (1).png" alt="">-->
+    <h1 class="text-white text-2xl md:text-4xl lg:text-6xl  font-bold">{text}</h1>
+
+    <div class="flex items-center">
+
+        <a href={next}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
+                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l14 0" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+            </svg>
+        </a>
+
+    </div>
+</nav>

@@ -1,0 +1,60 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import Header_home from "../components/header_home.astro";
+import Home from "../components/icons/Home.astro";
+import Prev from "../components/icons/Prev.astro";
+---
+<Layout title="Crear Carteles">
+    <Header_home />
+
+
+
+    <section class="p-4 w-full lg:w-[900px] mx-auto mt-16">
+        <a href="../">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
+                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 12l14 0" />
+                <path d="M5 12l4 4" />
+                <path d="M5 12l4 -4" />
+            </svg>
+        </a>
+
+        <div class="flex flex-row justify-between gap-11 ">
+
+            <img class="max-h-[500px]" src="../../public/images/nosotros/IMG_8434.jpg">
+
+            <section class="">
+                <article class="flex flex-col">
+                    <h2 class="text-xl font-semibold">Pablo</h2>
+                    <p class="text-pretty">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
+                        venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
+                        tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
+                        ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
+                        interdum. Nulla et consectetur nulla.
+
+                    </p>
+                </article>
+
+                <article class="flex flex-col py-4">
+                    <h2 class="text-xl font-semibold">Hernan</h2>
+                    <p class="text-pretty">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
+                        venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
+                        tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
+                        ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
+                        interdum. Nulla et consectetur nulla.
+
+                    </p>
+                </article>
+            </section>
+
+
+        </div>
+
+    </section>
+
+</Layout>

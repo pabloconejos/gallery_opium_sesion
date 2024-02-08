@@ -1,66 +1,20 @@
 ---
+import Prev from "./icons/Prev.astro";
+import Next from "./icons/Next.astro";
 const { class: mainTitle, next, prev, text } = Astro.props
 
 ---
-
-
-<!--<nav class="p-4 w-full flex justify-between ">
-    <div class="flex items-center">
-        <a href={prev}>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
-                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                 stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M5 12l14 0" />
-                <path d="M5 12l4 4" />
-                <path d="M5 12l4 -4" />
-            </svg>
-        </a>
-
-    </div>
-    <img class="w-[400px] h-auto" src="../../public/images/Captura de pantalla 2024-02-05 211755 (1).png" alt="">
-    <h1 class="text-white text-2xl md:text-4xl lg:text-6xl  font-bold">{text}</h1>
-
-    <div class="flex items-center">
-
-        <a href={next}>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                 stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M5 12l14 0" />
-                <path d="M15 16l4 -4" />
-                <path d="M15 8l4 4" />
-            </svg>
-        </a>
-
-    </div>
-</nav>-->
 
 <header class="backdrop-blur z-20 fixed top-0 gap-11 flex flex-col justify-center w-full mx-auto ">
     <div class="w-full max-w-screen-xl mx-auto ">
         <nav class="flex items-center justify-between text-sm flex-row p-2 gap-x-3  md:text-xl xl:gap-x-10 ">
             <a class="hover:scale-105 transition-transform" href={prev}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left"
-                     width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                     stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M5 12l14 0" />
-                    <path d="M5 12l4 4" />
-                    <path d="M5 12l4 -4" />
-                </svg>
+                <Prev />
             </a>
            <a class="hover:scale-105 transition-transform font-semibold">{text}</a>
             <!--<h1 class="text-white text-2xl md:text-4xl lg:text-6xl  font-bold">{text}</h1>-->
-           <a href={next}>
-               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                   <path d="M5 12l14 0" />
-                   <path d="M15 16l4 -4" />
-                   <path d="M15 8l4 4" />
-               </svg>
+           <a class="hover:scale-105 transition-transform" href={next}>
+               <Next />
            </a>
        </nav>
        <hr class="border-gray-200 sm:mx-auto dark:border-gray-700 " />

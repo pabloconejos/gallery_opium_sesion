@@ -8,12 +8,12 @@ const { class: mainTitle, next, prev, text } = Astro.props
 <header class="backdrop-blur z-20 fixed top-0 gap-11 flex flex-col justify-center w-full mx-auto">
     <div class="w-full max-w-screen-xl mx-auto">
         <nav class="flex items-center justify-between text-sm flex-row p-2 gap-x-3  md:text-xl xl:gap-x-10">
-            <a class="hover:scale-105 transition-transform" href={'/'+prev} style={{ opacity: prev === '' ? 0 : 1 }}>
+            <a class="hover:scale-105 transition-transform text-white" href={'/'+prev} style={{ opacity: prev === '' ? 0 : 1 }}>
                 <Prev />
             </a>
-            <a class="hover:scale-105 transition-transform font-semibold">{text}</a>
+            <a class="hover:scale-105 transition-transform font-semibold text-white">{text}</a>
             <!--<h1 class="text-white text-2xl md:text-4xl lg:text-6xl  font-bold">{text}</h1>-->
-            <a class="hover:scale-105 transition-transform" href={'/'+next} style={{ opacity: next === '' ? 0 : 1 }}>
+            <a class="hover:scale-105 transition-transform text-white" href={'/'+next} style={{ opacity: next === '' ? 0 : 1 }}>
                 <Next />
             </a>
         </nav>

@@ -5,12 +5,55 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Sesion 2">
+<Layout title="Sesión 2">
 
 
-    <Header text="SESION 2" next="resultados" prev="crear_carteles"/>
+    <Header text="SESIÓN 2" next="resultados" prev="crear_carteles"/>
 
     <section class="p-4 w-full lg:w-[700px] mx-auto ">
+        <section class=" mt-16">
+            <img class="" src="/images/sesion_2/IMG_4633.JPG" alt="Fotografia con el modelo posando agrrandose las cadenas">
+            <p class="py-6 text-white">
+                Una vez con los carteles impresos, tocaba culminar el trabajo con la sesión fotográfica.
+                Comenzamos eligiendo el lugar que Pablo había descubierto, ya que pasa por allí todos los
+                días en metro rumbo al trabajo. El sitio resultó perfecto: sucio, descuidado y lleno de
+                carteles. Fuimos unos días antes para planificar nuestra estrategia, tomar fotos de los
+                lugares, organizar los planos y pensar en las poses. Esta vez, Javier y Jaime nos acompañaron
+                para aportar ideas frescas. Una vez en casa, Hernán y Pablo se encargaron de planificar todos
+                los detalles, asegurándose de tener todo listo para el día de la sesión.
+            </p>
+            <video class="py-4" src="/images/sesion_2/MOV011.mp4" autoplay loop muted></video>
+            <section class="grid grid-cols-4 grid-rows-2 gap-2 py-3">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4647.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4596.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4720.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4596.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4704.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4773.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4784.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4751.JPG">
+            </section>
+            <p class="py-6 text-white">
+                El día de la sesión, estábamos preparados con todo lo necesario: cola, agua, pinceles para pegar los
+                carteles, todas las cámaras, los 25 carteles, el vestuario, etc. Además, se unió Max a la sesión.
+                Comenzamos a pegar los carteles, pero antes de que pudiéramos tomar una sola foto, la policía se
+                acercó a la acera para ver qué estábamos haciendo. Afortunadamente, no pasó nada y pudimos continuar
+                sin problemas. Las fotos consistían en que Roberto posara frente a los carteles para que luego Hernán
+                pudiera multiplicarlos y llenar toda la pared. Una vez terminado, algunos afortunados se fueron a comer
+                a un sucio, mientras que otros tuvieron que regresar a casa.
+            </p>
+            <video class="py-4" src="/images/sesion_2/MOV019.mp4" autoplay loop muted></video>
+            <section class="grid grid-cols-3 grid-rows-2 gap-2 py-3">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4603.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4738.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4789.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4696.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4682.JPG">
+                <img alt="Fotografias sesion con carteles" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_2/IMG_4635.JPG">
+            </section>
+        </section>
+
+
 
 
     </section>
@@ -20,3 +63,29 @@ import Layout from "../layouts/Layout.astro";
 
 
 </Layout>
+
+
+<style>
+
+    section img{
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+    }
+
+
+
+
+    @keyframes reveal {
+
+        from{
+            opacity: 0.5;
+            translate: 0 100px;
+        }
+        to{
+            opacity: 1;
+            translate: 0 0;
+        }
+
+    }
+</style>

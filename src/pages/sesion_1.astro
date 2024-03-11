@@ -7,7 +7,7 @@ import GoToHome from "../components/GoToHome.astro";---
 <Layout title="Seseión 1">
 
 
-    <Header text="SESISON 1" next="crear_carteles" prev="inspiracion"/>
+    <Header text="SESIÓN 1" next="crear_carteles" prev="inspiracion"/>
 
     <section class="p-4 w-full lg:w-[700px] mx-auto">
 
@@ -21,7 +21,8 @@ import GoToHome from "../components/GoToHome.astro";---
                 Justamente Roberto llegó ese día con una chaqueta negra de pelo durisima perfecta para lo que buscabamos.
                 Mas tarde cuando llego Jaime empezo a grabar videos con una camara digital y ya se nos acababan las ideas alli.
             </p>
-            <img class="" src="/images/sesion_1/A8CD6DC5-F705-4731-A6A5-28CDA5F0FAD5.JPG">
+            <video class="py-4" src="/images/sesion_1/MOV00F.mp4" autoplay loop muted></video>
+            <img class="" src="/images/sesion_1/A8CD6DC5-F705-4731-A6A5-28CDA5F0FAD5.jpg">
             <p class="py-6 text-white">
                 En principio, habíamos planeado hacer las fotos solo con el fondo blanco. Sin embargo, Pablo siempre
                 había sentido curiosidad por la estación de Paterna durante la noche; tenía algo que la hacía perfecta
@@ -34,17 +35,21 @@ import GoToHome from "../components/GoToHome.astro";---
                 Salieron unas fotos impresionantes que acabaron cobrando gran importancia en el cartel final.
 
             </p>
+            <video class="py-4" src="/images/sesion_1/MOV043.mp4" autoplay loop muted></video>
             <section class="grid grid-cols-4 grid-rows-2 gap-2 py-3">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/IMG_4416.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/Copia%20de%20IMG_4255.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/Copia%20de%20IMG_4263.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/Copia%20de%20IMG_4280.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/Copia%20de%20IMG_4275.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/Copia%20de%20IMG_4285.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/IMG_4303.JPG">
-                <img class="w-full h-full object-cover aspect-square" src="/images/sesion_1/IMG_4336.JPG">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/IMG_4416.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/Copia%20de%20IMG_4255.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/Copia%20de%20IMG_4263.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/Copia%20de%20IMG_4280.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/Copia%20de%20IMG_4275.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/Copia%20de%20IMG_4285.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/IMG_4303.jpg">
+                <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/sesion_1/IMG_4336.jpg">
             </section>
-            <img class="" src="/images/sesion_1/DC637DEB-F40E-489D-947B-3D6CBE8F0479.JPG">
+            <img class="" src="/images/sesion_1/DC637DEB-F40E-489D-947B-3D6CBE8F0479.jpg">
+
+            <video class="py-4" src="/images/sesion_1/MOV022.mp4" autoplay loop muted></video>
+
         </section>
     </section>
     <GoToHome />
@@ -60,11 +65,13 @@ import GoToHome from "../components/GoToHome.astro";---
     }
 
 
+
+
     @keyframes reveal {
 
         from{
             opacity: 0.5;
-            translate: 0 50px;
+            translate: 0 100px;
         }
         to{
             opacity: 1;

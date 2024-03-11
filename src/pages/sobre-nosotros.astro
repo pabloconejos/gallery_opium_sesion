@@ -1,51 +1,43 @@
 ---
-
 import Layout from "../layouts/Layout.astro";
 import Header_home from "../components/header_home.astro";
 import Home from "../components/icons/Home.astro";
 import Prev from "../components/icons/Prev.astro";
 import GoToHome from "../components/GoToHome.astro";
 ---
-<Layout  title="Crear Carteles">
+<Layout title="Crear Carteles">
     <Header_home />
 
-    <section class="p-4 w-full lg:w-[900px] mx-auto mt-16 ">
+    <section class="p-4 w-full lg:w-[900px] mx-auto mt-16">
 
-        <div class="flex flex-row justify-between gap-11 ">
+        <div class="flex flex-col lg:flex-row gap-11">
 
-            <img class="max-h-[500px]" src="/images/nosotros/IMG_8434.jpg">
+            <img alt="Pablo y Hernan" class="max-h-[500px] lg:w-[50%] aspect-auto" src="/images/nosotros/IMG_8434.jpg">
 
-            <section class="">
+            <section class="lg:w-[50%]">
                 <article class="flex flex-col">
-                    <h2 class="text-xl font-semibold">Pablo</h2>
+                    <h2 class="text-xl font-semibold text-white">Pablo</h2>
                     <p class="text-pretty text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
-                        venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
-                        tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
-                        ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
-                        interdum. Nulla et consectetur nulla.
-
+                        Pablo Conejos es un joven programador que combina su oficio con la fotografía, un interés
+                        que comenzó a desarrollar hace unos años. Sin embargo, es ahora cuando ha encontrado su
+                        verdadero camino en su faceta artística. Ha logrado integrar su profesión con su pasión
+                        por la fotografía, creando soluciones digitales para proyectos artísticos e identidades visuales.
                     </p>
                 </article>
 
                 <article class="flex flex-col py-4">
-                    <h2 class="text-xl font-semibold">Hernan</h2>
+                    <h2 class="text-xl font-semibold text-white">Hernan</h2>
                     <p class="text-pretty text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
-                        venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
-                        tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
-                        ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
-                        interdum. Nulla et consectetur nulla.
-
+                        Hernán es un joven diseñador gráfico y creativo que destaca en su campo. Desde temprana edad,
+                        su pasión por el diseño gráfico y la creatividad lo ha impulsado a explorar y desarrollar sus
+                        habilidades. A lo largo de los años, ha encontrado su vocación y ha canalizado su creatividad
+                        en proyectos innovadores y visualmente impactantes. Desde la conceptualización hasta la ejecución,
+                        Hernán se esfuerza por crear diseños estéticamente atractivos, funcionales y significativos.
                     </p>
                 </article>
             </section>
-
-
         </div>
-
     </section>
 
     <GoToHome />
-
 </Layout>

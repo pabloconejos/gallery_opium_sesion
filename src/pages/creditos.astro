@@ -5,30 +5,35 @@ import GoToHome from "../components/GoToHome.astro";
 
 const personas = [
     {
-        img: '/images/nosotros/IMG_8434.jpg',
+        img: '/images/creditos/DSCN7833.JPG',
         nombre: "Hernan",
-        do: ['Crear carteles', 'Edicion', 'Grabacion', 'Iluminación']
+        do: ['Crear carteles', 'Edición', 'Grabación', 'Iluminación']
 
     },
     {
-        img: '/images/nosotros/IMG_8434.jpg',
+        img: '/images/creditos/DSCN7838.JPG',
         nombre: "Pablo",
-            do: ['Desarrollo Web', 'Fotografia', 'Grabacion', 'Vestuario']
+        do: ['Desarrollo Web', 'Fotografia', 'Grabación', 'Vestuario']
     },
     {
-        img: '/images/nosotros/IMG_8434.jpg',
+        img: '/images/creditos/DSCN7834.JPG',
         nombre: "Jaime",
-        do: ['Iluminación', 'Grabacion', 'Ubicaciones']
+        do: ['Iluminación', 'Grabación', 'Ubicaciones']
     },
     {
-        img: '/images/nosotros/IMG_8434.jpg',
+        img: '/images/creditos/DSCN7832.JPG',
         nombre: "Roberto",
         do: ['Modelo', 'Vestuario']
     },
     {
         nombre: "Javier",
-        img: '/images/nosotros/IMG_8434.jpg',
-        do: ['Iluminación', 'Grabacion']
+        img: '/images/creditos/DSCN7835.JPG',
+        do: ['Iluminación', 'Grabación']
+    },
+    {
+        nombre: "Max",
+        img: '/images/creditos/DSCN7837.JPG',
+        do: ['Iluminación', 'Grabación']
     },
 
 ]
@@ -41,9 +46,9 @@ const personas = [
 
         {
             personas.map((p)=>(
-                    <article class="">
+                    <article>
                         <div class="relative">
-                            <img src={p.img}>
+                            <img class="aspect-auto" alt="Foto de colaborador" src={p.img}>
                             <section class="absolute w-full h-full bg-black/60 top-0 flex flex-col items-center opacity-1 hover:opacity-0 ease-in duration-200 hover:cursor-pointer">
 
                                 <ul class="w-48 text-sm font-medium text-white rounded-lg m-auto">

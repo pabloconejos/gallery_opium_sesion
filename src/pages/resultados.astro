@@ -8,12 +8,69 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Resultados">
 
 
-    <Header text="RESULTADOS" next="" prev="sesion_2"/>
+    <Header text="RESULTADO" next="" prev="sesion_2"/>
 
     <section class="p-4 w-full lg:w-[700px] mx-auto ">
+        <section class="mt-16">
+            <img class="" src="/images/resultado_final/roberto5.jpg" alt="Resultado Final foto con carteles de fondo">
+            <p class="py-6 text-white">
+                Para finalizar el proyecto, Hernán se encargó de editar las fotos, duplicando los carteles para ocupar
+                toda la imagen y ajustando color y luz. Su habilidad técnica garantizó una coherencia visual y estética.
+                El resultado fue justo la idea que teniamos al empezar el priyecti y con alta calidad, listas para
+                impresionar a cualquiera. Su dedicación y atención al detalle hicieron que el proyecto alcanzara su máximo
+                potencial visual.
+            </p>
+            <img class="" src="/images/resultado_final/roberto6.jpg" alt="Resultado Final foto con carteles de fondo">
+            <section class="grid grid-cols-2 grid-rows-1 gap-2 py-3">
+
+                <img alt="" src="/images/resultado_final/roberto1.jpg">
+                <img alt="" class="" src="/images/resultado_final/roberto4.jpg">
+
+            </section>
+            <p class="py-6 text-white">
+                Estamos realmente orgullosos de nuestro trabajo y felices de haber logrado un proyecto que va más allá
+                de simplemente tomar una foto y subirla a Instagram. Nos propusimos elevar el contenido y estamos
+                satisfechos con el resultado. Queremos expresar nuestro agradecimiento a todas las personas que nos
+                han brindado su ayuda, especialmente a Jaime, Javier, Max y nuestro modelo Roberto. Su colaboración
+                fue fundamental para el éxito del proyecto.
+            </p>
+            <section class="grid grid-cols-2 grid-rows-2 gap-4">
+                <img class="hover:scale-105 transition-transform cursor-pointer" alt="" src="/images/resultado_final/robertsesion2.jpg">
+                <img class="hover:scale-105 transition-transform cursor-pointer" alt="" src="/images/resultado_final/roberto3.jpg">
+                <img class="hover:scale-105 transition-transform cursor-pointer" alt="" src="/images/resultado_final/roberto8.jpg">
+                <img class="hover:scale-105 transition-transform cursor-pointer" alt="" src="/images/resultado_final/roberto9.jpg">
+            </section>
+            <img class="py-2 hover:scale-105 transition-transform cursor-pointer" alt="" src="/images/resultado_final/roberto2.jpg">
+
+        </section>
 
     </section>
 
     <GoToHome />
     
 </Layout>
+
+
+
+<style>
+
+    section img{
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+    }
+
+
+    @keyframes reveal {
+
+        from{
+            opacity: 0;
+            translate: 0 100px;
+        }
+        to{
+            opacity: 1;
+            translate: 0 0;
+        }
+
+    }
+</style>

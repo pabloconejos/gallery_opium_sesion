@@ -9,10 +9,38 @@ import GoToHome from "../components/GoToHome.astro";
 
     <Header text="CREAR CARTELES" next="sesion_2" prev="sesion_1"/>
 
-    <section class="p-4 w-full lg:w-[700px] mx-auto">
+    <section class="p-4 w-full lg:w-[1200px] mx-auto ">
 
         <section class=" mt-16">
-            <img class="" src="/images/carteles/Capturadepantalla2024-02-052113.jpg">
+            <p class="py-6 text-white text-center font-bold text-4xl">
+                Hernan se encargo de los <span class="text-red-600">carteles</span>, y este fue el proceso:
+            </p>
+
+            <!--<img class="" src="/images/carteles/Captura de pantalla 2024-02-05 211755menor.jpg">-->
+
+            <img class="w-full" src="/images/carteles/Capturadepantalla2024-02-052113.jpg">
+            <p class="txt-img text-white font-bold text-xl pt-3">
+                TECNICO*
+            </p>
+            <p class="txt-img text-white font-bold text-xl py-2">
+                Hernán desarrolló un diseño utilizando tres fotos de Roberto como base, con el objetivo de lograr un
+                efecto distintivo inspirado en las impresoras Xerox.
+            </p>
+            <p class="txt-img text-white font-bold text-xl py-2">
+                Aplicó un umbral a las imágenes y múltiples
+                granulados para aumentar la autenticidad. Agregó una textura de fuego detrás para generar impacto
+                visual. Seleccionó cuidadosamente la tipografía Opium para que complementara la estética general del
+                diseño.
+                Utilizó efectos de filtro para añadir dinamismo al texto.
+            </p>
+
+            <p class="txt-img text-white font-bold text-xl py-2">
+                Manipuló las imágenes de Roberto en el fondo para lograr una cohesión visual. Añadió siluetas con
+                desenfoque de movimiento para darle un toque de dramatismo y crear una narrativa visual. En resumen,
+                Hernán aplicó efectos como umbral, granulado, texturas y desenfoques para evocar la estética Xerox con
+                dinamismo y energía.
+            </p>
+
             <section class="grid grid-cols-3 grid-rows-2 gap-2 py-3">
                 <img class="w-full h-full object-cover aspect-square" src="/images/carteles/Captura%20de%20pantalla%202024-02-05%20211453.jpg">
                 <img class="w-full h-full object-cover aspect-square" src="/images/carteles/Captura%20de%20pantalla%202024-02-05%20210855.jpg">
@@ -21,24 +49,28 @@ import GoToHome from "../components/GoToHome.astro";
                 <img class="w-full h-full object-cover aspect-square" src="/images/carteles/Captura%20de%20pantalla%202024-02-05%20211044.jpg">
                 <img class="w-full h-full object-cover aspect-square" src="/images/carteles/Captura%20de%20pantalla%202024-02-05%20211637.jpg">
             </section>
-            <p class="py-6 text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
-                venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
-                tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
-                ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
-                interdum. Nulla et consectetur nulla. Nam magna ipsum, ultrices tempor posuere id, tempor ut velit.
-                Vivamus tempus vestibulum est vel accumsan. Suspendisse elit risus, dapibus gravida facilisis nec,
-                vestibulum sit amet tortor. Donec sit amet lorem efficitur, posuere ipsum sit amet, volutpat dolor.
+            <p class="txt-img text-white font-bold text-xl ">
+                ARISTICO*
             </p>
-            <img class="" src="/images/carteles/Captura de pantalla 2024-02-05 211755menor.jpg">
-            <p class="py-6  text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit purus, feugiat sed dolor at,
-                venenatis luctus ante. Vivamus in maximus neque, ut mattis velit. Morbi condimentum, augue ac
-                tempor eleifend, sem magna scelerisque nisi, a aliquet turpis sem ut ligula. Integer felis lacus,
-                ullamcorper non accumsan ut, ullamcorper in orci. Integer et turpis sit amet nulla pellentesque
-                interdum. Nulla et consectetur nulla. Nam magna ipsum, ultrices tempor posuere id, tempor ut velit.
-                Vivamus tempus vestibulum est vel accumsan. Suspendisse elit risus, dapibus gravida facilisis nec,
-                vestibulum sit amet tortor. Donec sit amet lorem efficitur, posuere ipsum sit amet, volutpat dolor.
+            <p class="txt-img text-white font-bold text-xl py-2">
+                En este contexto artístico, el enfoque del diseño se centra en crear un póster que capture la esencia
+                de la estética de la discografía de Opium, contando una historia visualmente impactante. La inspiración
+                en las impresoras Xerox añade nostalgia y autenticidad, mientras que los efectos de dibujo y terror
+                transmiten una atmósfera intrigante.
+            </p>
+            <p class="txt-img text-white font-bold text-xl py-2">
+
+                El personaje del póster, ubicado en la parte superior y
+                representado con varias poses, evoca protagonismo y dinamismo, atrayendo la atención del espectador
+                de inmediato. El efecto de imprenta de Xerox otorga una apariencia distintiva y surrealista al
+                personaje.
+                El título, con un aspecto fantasmagórico, añade profundidad a la narrativa visual.
+            </p>
+            <p class="txt-img text-white font-bold text-xl py-2">
+                La escena de las vías del tren y la estación en la parte inferior crea un contraste visual intrigante,
+                invitando a la anticipación y contemplación. En conjunto, el diseño del póster refleja escenarios
+                y posibilidades dentro de su movimiento, evocando misterio, aventura y emociones encontradas,
+                proporcionando una experiencia artística única y cautivadora.
             </p>
             <img class="" src="/images/bento_main/roberopiumcasi.jpg">
 
@@ -55,6 +87,11 @@ import GoToHome from "../components/GoToHome.astro";
         animation-range: entry 20% cover 30%;
     }
 
+    .txt-img {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+    }
 
     @keyframes reveal {
 

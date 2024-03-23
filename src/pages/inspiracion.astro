@@ -11,23 +11,25 @@ import GoToHome from "../components/GoToHome.astro";
 
     <Header text="INSPIRACIÓN" next="sesion_1" prev=""/>
 
-    <section class="p-4 w-full lg:w-[700px] mx-auto ">
+    <section class="p-4 w-full lg:w-[1200px] mx-auto ">
 
         <section class="mt-16 flex flex-col justify-center items-center ">
-            <img class="" src="/images/inspiracion/opium-antagonist.jpg">
-            <p class="pt-6 text-white">
-                Cuando Hernán comenzó a destacar con sus portadas y diseños, Pablo vio la posibilidad de una
-                unir nuestras facetas, fusionando la fotografía de Pablo con el talento de Hernán en el diseño.
-                Siempre nos gusto el colectivo Opium, y desde el lanzamiento del último álbum de Ken Karson ("A Great Chaos"),
-                la idea de unas fotos inspiradas en ese universo cobró vida.
-            </p>
-            <p class="pt-3 pb-6 text-white">
-                Nos reunimos inicialmente para pensar en: ubicaciones, poses, vestuario;
-                todo lo necesario para crear una sesión a la altura. El primer paso fue decidir la estructura de los
-                carteles para a la hora de hacer las fotos tener claro que material necesitabamos.
-            </p>
+            <!--<img class="" src="/images/inspiracion/opium-antagonist.jpg">-->
+            <img class="w-full" src="https://i.pinimg.com/564x/7e/72/8c/7e728c9f9871af3bdb78e85afec2aa39.jpg" alt="">
 
 
+            <p class="pt-6 text-white text-center font-bold text-4xl">
+                Nuestro proyecto empieza por aqui, <span class="text-blue-600">planteandolo todo desde el principio</span>, marcandonos una guia.
+            </p>
+            <p class="pt-14 pb-3 text-white font-bold text-xl">
+                Siempre nos gusto el colectivo Opium, y desde el lanzamiento del último álbum de Ken Karson ("A Great Chaos"), la idea de
+                unas fotos inspiradas en ese universo cobró vida.
+            </p>
+            <p class="pb-3 text-white font-bold text-xl">
+                Nos reunimos inicialmente para pensar en: ubicaciones, poses, vestuario; todo lo necesario para crear
+                una sesión a la altura. El primer paso fue decidir la estructura de los carteles para a la hora de hacer
+                las fotos tener claro que material necesitabamos.
+            </p>
 
             <section class="grid grid-cols-4 grid-rows-2 gap-2 py-3">
                 <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/inspiracion/opium-antagonist.jpg">
@@ -39,12 +41,15 @@ import GoToHome from "../components/GoToHome.astro";
                 <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/inspiracion/opium-face.jpg">
                 <img class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform cursor-pointer" src="/images/inspiracion/opium-4.jpg">
             </section>
+            <p class="txt-img text-white text-center font-bold text-xl">
+                Algunos ejemplos de los carteles que utilizamos como inspiración<span class="text-zinc-500">*</span>
+            </p>
 
-            <p class="py-6 text-white">
-                Buscamos ideas para las poses, tipografías y, sobre todo, para la estructura del cartel.
-                Hernán ya tenía algunas ideas en mente, pero Pablo estaba empeñado en querer algo similar
+            <p class="pt-14 pb-6 text-white font-bold text-xl">
+                <span class="text-zinc-400"><a href="https://www.instagram.com/escribadesigns/">Hernan</a></span> ya
+                tenía algunas ideas en mente, pero <span class="text-zinc-400"><a href="https://www.instagram.com/pabsdalegas/">Pablo</a></span> estaba empeñado en querer algo similar
                 a las cadenas de la portada de "A Great Chaos". Esa idea no era muy clara,
-                ¿cómo podríamos inspirarnos únicamente en unas cadenas pixeladas para hacer un cartel?
+                <span class="text-blue-600">¿cómo podríamos inspirarnos únicamente en unas cadenas pixeladas para hacer un cartel?</span>
                 Después de aclararnos, finalmente encontramos un punto en común: algo oscuro, con siluetas y
                 sombras, y un título que se destacara bien.
             </p>
@@ -58,10 +63,10 @@ import GoToHome from "../components/GoToHome.astro";
 
             </section>
 
-            <p class="py-6 text-white">
+            <p class="pt-14 pb-6 text-white font-bold text-xl">
                 Ahora tocaba pensar en las fotos y el gran problema que teníamos era encontrar buenas poses, ya que el
-                modelo que teníamos era nuestro tt Roberto, que le mete duro pero necesitaba un poco de
-                ayuda. Pablo pensó en el vestuario y compramos un par de cosas en Vinted que le encantaron a Roberto.
+                modelo que teníamos era nuestro tt <span class="text-zinc-400"><a href="https://www.instagram.com/robb.3r/">Roberto</a></span>,
+                que le mete duro pero necesitaba un poco de ayuda. Pablo pensó en el vestuario y compramos un par de cosas en Vinted que le encantaron a Roberto.
                 Con todo pensado, solo faltaba quedar con los demás, montar el estudio en el comedor de Pablo y empezar la sesión.
             </p>
 
@@ -79,6 +84,12 @@ import GoToHome from "../components/GoToHome.astro";
 <style>
 
     section img{
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+    }
+
+    .txt-img {
         animation: reveal linear both;
         animation-timeline: view();
         animation-range: entry 20% cover 30%;

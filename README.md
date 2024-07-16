@@ -1,54 +1,47 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
-```
+<h1 align="center">
+  <br>
+  <a href="https://opium-session.web.app/"><img 
+    src="./public/images/pabsdalegasLogo.png" alt="Icono Spotify" width="200"></a>
+  <br>
+  GALLERY SESSION
+  <br>
+</h1>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+<h4 align="center">Online Gallery about a photography session</h4>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+<p align="center">
+  <a href="#about">About</a> •
+  <a href="#tools">Tools</a> •
+  <a href="#credits">Credits</a> •
+</p>
 
-## 🚀 Project Structure
+![screenshot](./public/images/img_template.png)
 
-Inside of your Astro project, you'll see the following folders and files:
+## About
+* This website is like a online magazine where you can see all the process about a photography session. On it we tell all the steps that we follow to finish the project
+  
+## Tools
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- I developed this project to know about Astro. And I see that Astro is a very good tool for creating static websites like this.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Credits
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+This software uses the following open source packages:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- [Astro](https://astro.build/)
+- [Tailwind](https://tailwindcss.com/)
 
-## 🧞 Commands
+## Related
 
-All commands are run from the root of the project, from a terminal:
+[https://opium-session.web.app/](https://opium-session.web.app/) - Website
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+> GitHub [@pabloconejos](https://github.com/pabloconejos) &nbsp;&middot;&nbsp;
+> Twitter [@konezk_](https://twitter.com/konezk_)
+> Instagram [@alivezk_](https://www.instagram.com/alivezk_/)
+> Linkedin [Pablo Conejos](www.linkedin.com/in/pablo-conejos-chirivella-145024252)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
